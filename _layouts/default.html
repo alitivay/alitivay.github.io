@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ali Tivay - {{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrapper">
+    <nav class="site-nav">
+      <a href="/" {% if page.url == "/" %}class="current"{% endif %}>Bio</a>
+      <a href="/assets/files/Ali-Tivay-CV.pdf" target="_blank">CV</a>
+      <a href="/research.html" {% if page.url == "/research.html" %}class="current"{% endif %}>Research</a>
+      <a href="/programming.html" {% if page.url == "/programming.html" %}class="current"{% endif %}>Programming</a>
+      <a href="/publications.html" {% if page.url == "/publications.html" %}class="current"{% endif %}>Publications</a>      
+    </nav>
+  </div>
+</header>
+
+{{ content }}
+{% include footer.html %}
+
+</body>
+</html>

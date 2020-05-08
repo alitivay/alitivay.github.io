@@ -1,0 +1,70 @@
+---
+layout: default
+nav_class: 'research'
+title: 'Research'
+---
+<section class="content" id="content">
+  <article class="post-content">
+
+    <h4>
+      Controlling Nonlinear Systems with Linear Controllers
+    </h4>
+
+    <img class="in-research" src="/assets/images/polytopic.jpg"/>
+
+    <p>
+      Almost every dynamic system, be it natural or man-made, behaves nonlinearly. Meaning that its behavior can only be described accurately using a set of nonlinear differential equations. In control engineering, we often simplify this behavior and express it in terms of linear differential equations, which can be inaccurate at times. The objective of this research is to find a systematic and non-conservative way to locally transform nonlinear differential equations into a small number of linear equations that form a polytopic uncertainty model. This way, we have a more accurate representation of behavior around our region of operation. Having the linear uncertain model, we formulate controller design problems in the form of linear matrix inequalities (LMIs) and solve for a controller that can stabilize the uncertain system, consequently stabilizing the underlying nonlinear system in a more reliable way.
+    </p>
+
+    <h4>
+      Passive Hydraulic Actuator Control for Increased Efficiency
+    </h4>
+
+    <img class="in-research" src="/assets/images/passiveehss.jpg"/>
+    
+    <p>
+      There are many instances in the nature, where animals take advantage of the laws of physics to operate at very high efficiencies. Salmon fish can travel hundreds of miles upstream with the help of fluid vortices, and Eagles can soar for hours at a time without needing to flap their wings using the thermofluid characteristics of the air. The purpose of this research is to bring a similar passive mode into the operation of hydraulic actuators with the goal of increased efficiency. For this purpose, consider an actuator interacting with an active environment. This environment may support or oppose the desired movement of the actuator at any given time. Therefore, there is sometimes a chance that we can precisely control the position just by throttling the fluid already inside the actuator. To achieve this, we design a switched control algorithm with appropriate guard conditions to decide whether this mode can be activated at each given instant, resulting in a more efficient electro-hydraulic servo system.
+    </p>
+
+    <h4>
+      Representation Learning for Fault Detection
+    </h4>
+
+    <img class="in-research" src="/assets/images/replearning.jpg"/>
+
+    <p>
+      Fault detection in mechanical systems, much like other detection problems such as face recognition and language processing, boils down to a very fundamental question: How to teach a computer to classify and discriminate? Past research shows that a good representation of data is key. That's why a large body of helpful transformations are used in engineering. This can be as simple as conversion from Cartesian to Polar coordinates, or more complex like Wavelet and Cepstrum transforms. The objective of our research is to design an algorithm that learns to represent. First, we design an objective function that grades a given transformation in terms of its ability to pull a specific set of data apart. Then, we design a gradient-based algorithm to maximize this objective and achieve a mapping function that casts raw data into a new dimension, where classification is easier. This is very helpful in fault detection, where a computer needs to discriminate between a healthy and a faulty system.
+    </p>
+
+    <h4>
+      Fault Tolerance through Hydraulic Pressure Reconfiguration
+    </h4>
+
+    <img class="in-research" src="/assets/images/tolerant.jpg"/>
+
+    <p>
+      Fault tolerance is a desirable property that enables a system to continue operating properly in the event of one or more faults within some of its components. To achieve fault tolerance, often a mechanism is required to adapt to faulty conditions. In past research, this is achieved using mechanical redundancies or changes in the control algorithm. In this research, we introduce a fluid pressure-based schema for reconfiguration in the face of faults. For this purpose, we propose a hydraulic actuation system with controllable supply pressure. We show that the supply pressure has a significant impact on the reachable sets of the nonlinear hydraulic system, and in the event of a rather broad class of faults, the negative effects can be counteracted by appropriately adjusting the supply pressure. To achieve supply pressure tracking, we design a nonlinear MIMO controller and test the resulting algorithm in a practical setup.
+    </p>
+
+    <h4>
+      Observer-Based Fault-Estimation in Fluid Power Systems
+    </h4>
+
+    <img class="in-research" src="/assets/images/detection.jpg"/>
+
+    <p>
+      Estimation of faults is an interesting problem that often boils down to a more general problem: How do we teach a computer to make an educated guess about the unknown, from a limited set of known variables. In this research, we posit that to teach the computer to guess, we first need to determine the relationship between the known and the unknown. Here, the unknown are the possible faults that can occur in a fluid power system such as internal leakage, and the known variables are sensory data such as fluid pressure. To achieve fault estimation, first, we design a sliding-mode observer (which is a computational clone of the actual system with some additional terms) and prove that it can accurately estimate the internal states of the system even if the clone is not exact. Then we show that the effort of the observer is proportional to the magnitude of unknown terms, forming a basis for the computer to guess the origin and the extent of a given fault in the system.  
+    </p>
+
+    <h4>
+      Energy-Saving Design in Fluid Power Systems
+    </h4>
+
+    <img class="in-research" src="/assets/images/energysaving.jpg"/>
+
+    <p>
+      Hydraulic systems are mostly used in very heavy-duty applications, where no other method of actuation can match the force and stiffness requirements. Low efficiency is the main reason why this type of actuation is not more prevalent in common engineering designs. In this line of research, we strive to find ways to improve the overall efficiency of a hydraulic system during position and force control tasks by proposing a slight change in the configuration of the valves, allowing for a freely controllable supply pressure. This provides an extra degree of freedom, enabling us to adjust the pressure distribution in the system during position control. Building on this, we propose a simple algorithm that receives as its input the relative importance of both accuracy and efficiency, and accordingly designs an easy-to-implement controller that achieves both acceptable position tracking and energy saving. 
+    </p>
+
+  </article>
+</section>
